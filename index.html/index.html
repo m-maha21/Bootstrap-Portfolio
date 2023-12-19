@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bootstrap Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Bootstrap-Portfolio/css/style.css">
+</link>
+    <!-- Custom styles -->
+    <style>
+        /* Add your custom styles here */
+        body {
+            padding-top: 56px; /* Adjusted for the fixed navbar height */
+        }
+        .navbar-brand img {
+            max-height: 30px; /* Adjust the height of your logo */
+        }
+        .jumbotron {
+            background: url('./Bootstrap-Portfolio/images/tower-bridge.jpeg') center/cover; /* Updated with the correct path */
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .work-section {
+            padding: 50px 0;
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        .btn:hover {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#mypicture"><img src="./Bootstrap-Portfolio/images/photo.jpeg" alt="My Picture"></a> <!-- Replace with your logo URL -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#hero-section">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#work-section">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-section">About/Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="jumbotron" id="hero-section">
+    <img src="images/photo.jpeg" alt="Your Picture" class="rounded-circle img-fluid mb-3"> <!-- Updated with the correct path -->
+    <h1 class="display-4">Your Name</h1>
+    <p class="lead">Your tagline or brief introduction.</p>
+</div>
+
+<!-- Work Section -->
+<div class="container work-section" id="work-section">
+    <h2 class="text-center mb-4">My Work</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="./images/tower-bridge.jpeg" class="card-img-top" alt="Project Image">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">Brief overview of the work.</p>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more cards for other projects -->
+    </div>
+</div>
+
+<!-- Skills Section -->
+<div class="container" id="skills-section">
+    <h2 class="text-center mb-4">My Skills</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Skill 1</li>
+        <li class="list-group-item">Skill 2</li>
+        <!-- Add more skills -->
+    </ul>
+</div>
+
+<!-- About/Contact Section -->
+<div class="container" id="about-section">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Your detailed description goes here.</p>
+        </div>
+        <!-- Add more sections as needed (e.g., contact form) -->
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2023 Your Bootstrap Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap

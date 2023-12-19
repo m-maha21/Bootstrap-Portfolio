@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: aqua;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 1em;
+    flex-wrap: wrap;
+  }
+
+  .hero-section {
+    background-image: url('../images/photo.jpeg');
+}
+
+
+        /* Add your custom styles here */
+        body {
+            padding-top: 56px; /* Adjusted for the fixed navbar height */
+        }
+        .navbar-brand img {
+            max-height: 30px; /* Adjust the height of your logo */
+        }
+        .jumbotron {
+            background: url('./images/tower-bridge.jpeg') center/cover; /* Updated with the correct path */
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .work-section {
+            padding: 50px 0;
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        .btn:hover {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+  
